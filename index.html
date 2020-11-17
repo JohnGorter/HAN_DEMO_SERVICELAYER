@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        fetch("http://localhost:8088/account/1234", {
+            method:'post',
+            body: {}
+        }).then(response => response.json())
+        .then(data => console.log("data", data));
+
+
+        // fetch("http://localhost:8088/account")
+        // .then(response => response.json())
+        // .then(data => console.log("data", data));
+    </script>
+</body>
+</html>
